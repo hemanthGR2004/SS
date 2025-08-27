@@ -1,5 +1,6 @@
-# SmartShield (Chrome Extension - Manifest V3)
+# SmartShield (Chrome Extension -using Manifest V3)
 
+adaptive theme based project ,by struturing my own idea 
 Futuristic, neon-themed browser security assistant that helps you avoid harmful downloads and warns you when visiting suspicious websites.
 
 ## Install (Developer Mode)
@@ -112,4 +113,5 @@ Futuristic, neon-themed browser security assistant that helps you avoid harmful 
 ## License
 
 MIT © SmartShield author --{@hemanth GR.} 
+
 
