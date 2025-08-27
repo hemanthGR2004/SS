@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>SmartShield</title>
+	<link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+	<div id="app" class="app">
+		<header class="header">
+			<div class="logo">
+				<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M12 2l8 3v6c0 5.25-3.438 10.125-8 11-4.562-.875-8-5.75-8-11V5l8-3z" fill="#00e5ff"/>
+					<path d="M12 4l6 2v5c0 4.2-2.75 8.1-6 8.8-3.25-.7-6-4.6-6-8.8V6l6-2z" fill="#0b0f12"/>
+				</svg>
+				<span>SmartShield</span>
+			</div>
+			<nav class="tabs">
+				<button data-tab="downloads" class="tab active">Downloads</button>
+				<button data-tab="sites" class="tab">Sites</button>
+				<button data-tab="settings" class="tab">Settings</button>
+			</nav>
+		</header>
+		<main class="content">
+			<section id="tab-downloads" class="panel active">
+				<div class="cards">
+					<div class="card">
+						<h3>Recent Risk</h3>
+						<canvas id="radarChart" width="220" height="160"></canvas>
+					</div>
+					<div class="card">
+						<h3>File Type Heatmap</h3>
+						<canvas id="heatmap" width="220" height="160"></canvas>
+					</div>
+				</div>
+				<ul id="downloadsList" class="list"></ul>
+			</section>
+			<section id="tab-sites" class="panel">
+				<ul id="sitesList" class="list"></ul>
+			</section>
+			<section id="tab-settings" class="panel">
+				<div class="settings">
+					<label><input type="checkbox" id="toggleDownloads" checked /> Monitor Downloads</label>
+					<label><input type="checkbox" id="toggleSites" checked /> Site Detection</label>
+					<label><input type="checkbox" id="toggleTooltips" checked /> Link Tooltips</label>
+				</div>
+				<div class="actions">
+					<button id="resetProfile">Reset Profile</button>
+					<button id="clearLogs">Clear Logs</button>
+					<button id="exportLogs">Export Logs</button>
+				</div>
+				<h3>Whitelist</h3>
+				<ul id="whitelist" class="list compact"></ul>
+			</section>
+		</main>
+	</div>
+	<script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "SmartShield",
+  "description": "Futuristic neon-themed browser security assistant to avoid harmful downloads and warn on suspicious sites.",
+  "version": "1.0.0",
+  "permissions": [
+    "downloads",
+    "storage",
+    "webNavigation",
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "SmartShield Dashboard",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/shield16.svg",
+    "32": "icons/shield32.svg",
+    "48": "icons/shield48.svg",
+    "128": "icons/shield128.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/*.svg"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
