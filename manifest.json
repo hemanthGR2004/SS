@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "SmartShield",
   "description": "Futuristic neon-themed browser security assistant to avoid harmful downloads and warn on suspicious sites.",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "permissions": [
     "downloads",
     "storage",
@@ -45,3 +45,4 @@
     }
   ]
 }
+
