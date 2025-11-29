@@ -112,6 +112,7 @@ Futuristic, neon-themed browser security assistant that helps you avoid harmful 
 
 ## License
 
-MIT © SmartShield author --{@hemanth GR.} 
+MIT © SmartShield author --{@hemanth GR & his team} 
+
 
 
