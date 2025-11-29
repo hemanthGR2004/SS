@@ -27,3 +27,4 @@ html,body{width:360px;min-height:460px;margin:0;background:#0b0f12;color:#bfeaff
 .heat{display:grid;grid-template-columns:repeat(6,1fr);gap:2px}
 .heat div{height:20px;border-radius:3px}
 .small{font-size:12px;color:#86d6ff}
+
