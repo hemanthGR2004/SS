@@ -125,3 +125,4 @@ if (!document.documentElement.dataset.smartshieldInjected) {
 		}
 	});
 }
+
