@@ -1,6 +1,6 @@
 'use strict';
 
-// Storage keys
+// Storage keys for the keys
 const STORAGE_KEYS = {
 	DOWNLOADS: 'downloadsLog',
 	SITES: 'siteLog',
@@ -400,3 +400,4 @@ self.SmartShield = {
 	categorizeMime,
 	extractDomain
 };
+
