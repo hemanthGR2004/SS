@@ -7,7 +7,7 @@ Futuristic, neon-themed browser security assistant that helps you avoid harmful 
 
 1. Open `chrome://extensions` in Chrome.
 2. Enable "Developer mode" (top right).
-3. Click "Load unpacked" and select the folder: `C:\SmartShield`.
+3. Click "Load unpacked" and select the folder: `path:\SmartShield`.
 4. Pin SmartShield to the toolbar for quick access.
 
 ## Files
@@ -113,6 +113,7 @@ Futuristic, neon-themed browser security assistant that helps you avoid harmful 
 ## License
 
 MIT © SmartShield author --{@hemanth GR & his team} 
+
 
 
 
