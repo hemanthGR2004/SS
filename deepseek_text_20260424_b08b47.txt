@@ -1,0 +1,171 @@
+═══════════════════════════════════════════════════════════════
+                    STRING QUESTIONS (4 Questions)
+═══════════════════════════════════════════════════════════════
+
+QUESTION 1 (Password Validator)
+Write a program that:
+- Takes a password as input from user
+- Checks if password length is at least 8 characters
+- Counts how many uppercase, lowercase, digits, and special characters (!@#$%^&*) are in the password
+- Prints "Strong Password" if: length>=8 AND uppercase>=1 AND lowercase>=1 AND digits>=1
+- Otherwise prints "Weak Password" with specific reason why
+- Also display the password with all vowels replaced by '*'
+
+Example Input: Hello@123
+Example Output:
+Length: 8 ✓
+Uppercase: 1, Lowercase: 4, Digits: 3, Special: 1
+Strong Password
+Masked Password: H*ll*@123
+
+
+QUESTION 2 (Text Formatter)
+Write a program that:
+- Takes a paragraph from the user
+- Counts total words (split by spaces)
+- Counts total sentences (split by . ! ?)
+- Finds and displays the longest word in the paragraph
+- Converts the entire paragraph to title case (first letter of each word capital)
+- Replaces all occurrences of "bad" with "good" (case-insensitive)
+- Checks if the paragraph contains the word "Python"
+- Prints the paragraph in reverse order (characters reversed)
+
+Example Input: python is fun. python is easy!
+Example Output: [Your program should handle all above tasks]
+
+
+QUESTION 3 (Username Generator)
+Write a program that:
+- Takes user's first name, last name, birth year, and favorite color
+- Generates username = first 3 letters of first name + last 2 letters of last name + last 2 digits of birth year
+- Converts the entire username to lowercase
+- Checks if username contains any digit
+- Counts how many vowels are in the username
+- Reverses the username and displays it
+- Creates an email = username + "@generated.com"
+- Displays all results using f-strings
+
+Example Input: First=Alexander, Last=Hamilton, Year=1995, Color=blue
+Example Output: Username: aleham95, Reversed: 59mah ela, Email: aleham95@generated.com
+
+
+QUESTION 4 (Message Decoder)
+Write a program that:
+- Takes an encoded message as input (like "H3ll0 W0rld")
+- Replaces all digits with their word forms (0=zero, 1=one, 2=two, 3=three, etc.)
+- Converts the entire message to uppercase
+- Removes all spaces from the message
+- Checks if the message is a palindrome (same forward and backward) after removing spaces
+- Counts how many 'E' letters are in the final message
+- Prints the decoded message and all results
+
+Example Input: H3ll0
+Example Output: Decoded: HTHREEl lZERO (show step by step)
+
+═══════════════════════════════════════════════════════════════
+                    LISTS & TUPLES QUESTIONS (6 Questions)
+═══════════════════════════════════════════════════════════════
+
+QUESTION 5 (Student Grade Manager)
+Write a program that:
+- Creates an empty list called 'grades'
+- Asks user to enter grades for 5 subjects (one by one) and adds to list
+- Displays the list of grades
+- Calculates and displays: highest grade, lowest grade, average grade
+- Sorts the grades in descending order and displays
+- Counts how many students scored above 75
+- Converts the list to a tuple and displays it
+- Tries to modify the tuple (show what error occurs using try-except)
+
+Example Output should show all calculations
+
+
+QUESTION 6 (Shopping Cart System)
+Write a program that:
+- Creates a list of 5 available items with prices: ["Laptop",50000], ["Mouse",500], ["Keyboard",1500], ["Monitor",8000], ["Headphones",2000]
+- Displays all items with their prices
+- Asks user to enter 3 items they want to buy (by name)
+- Creates a new list called 'cart' with selected items
+- Calculates total bill amount
+- Checks if "Laptop" is in cart, if yes add 5% GST
+- Creates a tuple of (total_amount, number_of_items, average_price)
+- Displays the shopping bill with all details
+
+Hint: Use nested lists or two separate lists
+
+
+QUESTION 7 (List Operations Master)
+Write a program that:
+- Creates a list: numbers = [15, 22, 8, 19, 31, 42, 7, 19, 25, 19]
+- Removes all duplicate values (keep only unique)
+- Adds 100 at the end of the list
+- Inserts 50 at index 3
+- Removes the first occurrence of 19
+- Counts how many times 19 appears in original list
+- Sorts the list in ascending order
+- Creates a new list containing only even numbers from the sorted list
+- Reverses the new list
+- Prints both original modified list and the new even list
+
+Example Output: Show each step
+
+
+QUESTION 8 (Tuple & List Combined)
+Write a program that:
+- Creates a tuple of weekdays: ("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday")
+- Converts the tuple to a list
+- Asks user to enter a new day to add to the list
+- Asks user to enter a day to remove from the list
+- Sorts the list alphabetically
+- Converts back to a tuple
+- Checks if "Saturday" is in the tuple
+- Prints the index position of "Wednesday"
+- Counts how many days have more than 6 letters
+- Creates a slice of first 3 days and last 3 days
+
+Example Output: Show all operations
+
+
+QUESTION 9 (Matrix/2D List Operations)
+Write a program that:
+- Creates a 3x3 matrix (list of lists): [[1,2,3],[4,5,6],[7,8,9]]
+- Prints the matrix in a grid format
+- Calculates the sum of all elements
+- Calculates the sum of each row and each column
+- Finds the maximum number in the matrix
+- Replaces all even numbers with 0
+- Adds a new row [10,11,12] at the end
+- Adds a new column [13,14,15,16] to the matrix
+- Converts the entire matrix to a single list using list comprehension
+- Displays all results
+
+Example Output: Show matrix transformation step by step
+
+
+QUESTION 10 (Contact Book Manager)
+Write a program that:
+- Creates an empty list to store contacts (each contact is a tuple: (name, phone, email))
+- Asks user to add 3 contacts (use loop)
+- Displays all contacts in a formatted table
+- Asks user to search for a contact by name
+- If found, displays the contact details, else prints "Not Found"
+- Creates a list of only names from all contacts
+- Creates a list of only phone numbers
+- Checks if any phone number starts with "9"
+- Counts how many contacts have gmail.com email
+- Creates a sorted list of contacts by name
+- Displays the final contact book
+
+Example Input: Add 3 friends' details
+Example Output: Search and display results
+
+═══════════════════════════════════════════════════════════════
+                    BONUS TIPS
+═══════════════════════════════════════════════════════════════
+- Use f-strings for all print statements
+- Use try-except where needed
+- Use comments to explain each step
+- Test each question with different inputs
+- For Question 4 (palindrome): remove spaces and compare with reversed string
+- For Question 8: Remember tuples are immutable - conversion needed to modify
+═══════════════════════════════════════════════════════════════
